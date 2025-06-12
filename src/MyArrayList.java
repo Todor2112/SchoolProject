@@ -6,11 +6,11 @@ import java.util.Iterator;
  * Поддържа операции: добавяне, премахване, достъп по индекс, търсене, итерация и изчистване.
  */
 public class MyArrayList<T> implements Iterable<T> {
-    private Object[] data;
+    private T[] data;
     private int size;
 
     public MyArrayList() {
-        data = new Object[10];
+        data = (T[]) new Object[10];
         size = 0;
     }
 
